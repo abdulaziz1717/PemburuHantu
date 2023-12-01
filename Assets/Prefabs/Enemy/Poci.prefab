@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3006303473192394426}
   - component: {fileID: 7742581467305648959}
   - component: {fileID: -2683613768627675557}
+  - component: {fileID: -900668766837239393}
   m_Layer: 0
   m_Name: Poci
   m_TagString: Enemy
@@ -158,3 +159,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyData: {fileID: 11400000, guid: f0f257ffcdc8cc346ba79be769955f56, type: 2}
+--- !u!114 &-900668766837239393
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1919970375551054313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20fea94d230c31a459ec5c9acd6e942a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  drops:
+  - name: Coin
+    itemPrefab: {fileID: 992871431119503301, guid: e75dab2ac43a4fd42a626edc4bc55540, type: 3}
+    dropRate: 50
