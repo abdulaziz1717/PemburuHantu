@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7120330006141329823}
   - component: {fileID: 3142193088182562588}
   - component: {fileID: 6143724081894284852}
+  - component: {fileID: 6080526187485534596}
   m_Layer: 0
   m_Name: Tasbih Weapon
   m_TagString: Untagged
@@ -99,3 +100,38 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponData: {fileID: 11400000, guid: 63477c3c4c9819845ae78e842514b099, type: 2}
   destroyAfterSeconds: 2
+--- !u!58 &6080526187485534596
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 324464276308247526}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.15238586, y: -0.048121862}
+  serializedVersion: 2
+  m_Radius: 2.010762
