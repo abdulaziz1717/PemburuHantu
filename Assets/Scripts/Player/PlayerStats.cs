@@ -28,6 +28,12 @@ public class PlayerStats : MonoBehaviour
         public int experienceCapIncrease;
     }
 
+    //I-Frames
+    [Header("I-Frames")]
+    public float invincibilityDuration;
+    float invincibilityTimer;
+    bool isInvincible;
+
     public List<LevelRange> levelRanges;
 
 
@@ -45,6 +51,19 @@ public class PlayerStats : MonoBehaviour
     {
         //Initialize the experience cap as the first experience cap increase
         experienceCap = levelRanges[0].experienceCapIncrease;
+    }
+
+    void Update()
+    {
+        if (invincibilityTimer > 0)
+        {
+            invincibilityTimer -= Time.deltaTime;
+        }
+        // if the invincibility timer has reached 0, set the invincibility flag to false
+        else if (isInvincible)
+        {
+            isInvincible = false;
+        }
     }
 
     public void IncreaseExperience(int amount)
@@ -74,5 +93,28 @@ public class PlayerStats : MonoBehaviour
             }
             experienceCap += experienceCapIncrease;
         }
+    }
+
+    public void TakeDamage(float dmg)
+    {
+        //If the player is not currently invincible, reduce health and start invincibility
+        if (!isInvincible)
+        {
+            currentHealth -= dmg;
+
+            invincibilityTimer = invincibilityDuration;
+            isInvincible = true;
+
+            if (currentHealth <= 0)
+            {
+                Kill();
+            }
+
+        }
+    }
+
+    public void Kill()
+    {
+        Debug.Log("PLAYER IS DEAD");
     }
 }
