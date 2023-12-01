@@ -26458,6 +26458,7 @@ GameObject:
   - component: {fileID: 1148976733}
   - component: {fileID: 1148976734}
   - component: {fileID: 1148976735}
+  - component: {fileID: 1148976736}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -26618,11 +26619,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f04d5ba9ffd80a4eb064aa22c7a011f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
   moveDir: {x: 0, y: 0}
   lastHorizontalVector: 0
   lastVerticalVector: 0
   lastMovedVector: {x: 0, y: 0}
+  characterData: {fileID: 11400000, guid: fe85d70e434bdfa49a68e9f797fa8388, type: 2}
 --- !u!114 &1148976734
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26656,6 +26657,29 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1148976736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1148976726}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 015f9203a9d36c043829412939f96abf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterData: {fileID: 11400000, guid: fe85d70e434bdfa49a68e9f797fa8388, type: 2}
+  level: 1
+  experience: 0
+  experienceCap: 0
+  levelRanges:
+  - startLevel: 1
+    endLevel: 3
+    experienceCapIncrease: 100
+  - startLevel: 4
+    endLevel: 5
+    experienceCapIncrease: 200
 --- !u!1 &1150944631
 GameObject:
   m_ObjectHideFlags: 0
@@ -110586,6 +110610,10 @@ PrefabInstance:
     - target: {fileID: 3272219879955548609, guid: 4d655cc2cf9bf1b44b56508cbd0e317e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7742581467305648959, guid: 4d655cc2cf9bf1b44b56508cbd0e317e, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
