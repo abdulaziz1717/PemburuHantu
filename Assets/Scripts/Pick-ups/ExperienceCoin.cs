@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ExperienceCoin : MonoBehaviour, ICollectible
+public class ExperienceCoin : Pickup, ICollectible
 {
     public int experienceGranted;
 
@@ -10,6 +10,5 @@ public class ExperienceCoin : MonoBehaviour, ICollectible
     {
         PlayerStats player = FindObjectOfType<PlayerStats>();
         player.IncreaseExperience(experienceGranted);
-        Destroy(gameObject);
     }
 }

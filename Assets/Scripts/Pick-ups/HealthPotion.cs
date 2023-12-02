@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HealthPotion : MonoBehaviour, ICollectible
+public class HealthPotion : Pickup, ICollectible
 {
     // The amount of health to restore when this item is collected
     public int healthToRestore;
@@ -11,6 +11,5 @@ public class HealthPotion : MonoBehaviour, ICollectible
     {
         PlayerStats stats = FindObjectOfType<PlayerStats>();
         stats.RestoreHealth(healthToRestore);
-        Destroy(gameObject);
     }
 }
