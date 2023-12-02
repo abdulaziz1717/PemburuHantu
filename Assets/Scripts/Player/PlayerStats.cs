@@ -20,6 +20,9 @@ public class PlayerStats : MonoBehaviour
     [HideInInspector]
     public float currentMagnet;
 
+    //Spawned Weapon
+    public List<GameObject> spawnedWeapons;
+
     //Experience and level of the player
     [Header("Experience/Level")]
     public int level = 1;
@@ -56,6 +59,9 @@ public class PlayerStats : MonoBehaviour
         currentmight = characterData.Might;
         currentProjectileSpeed = characterData.ProjectileSpeed;
         currentMagnet = characterData.Magnet;
+
+        //Spawn the starting weapon
+        SpawnWeapon(characterData.StartingWeapon);
     }
 
     void Start()
@@ -157,4 +163,11 @@ public class PlayerStats : MonoBehaviour
         }
     }
 
+    public void SpawnWeapon(GameObject weapon)
+    {
+        //Spawn the starting weapon
+        GameObject spawnedWeapon = Instantiate(weapon, transform.position, Quaternion.identity);
+        spawnedWeapon.transform.SetParent(transform);    //Set the weapon to be a child of the player
+        spawnedWeapons.Add(spawnedWeapon);  //Add it to the list of spawned weapons
+    }
 }
