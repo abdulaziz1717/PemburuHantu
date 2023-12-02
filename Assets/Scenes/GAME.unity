@@ -27198,7 +27198,6 @@ MonoBehaviour:
   lastHorizontalVector: 0
   lastVerticalVector: 0
   lastMovedVector: {x: 0, y: 0}
-  characterData: {fileID: 11400000, guid: fe85d70e434bdfa49a68e9f797fa8388, type: 2}
 --- !u!114 &1148976734
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27245,6 +27244,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterData: {fileID: 11400000, guid: fe85d70e434bdfa49a68e9f797fa8388, type: 2}
+  currentHealth: 0
+  currentRecovery: 0
+  currentMoveSpeed: 0
+  currentmight: 0
+  currentProjectileSpeed: 0
   level: 1
   experience: 0
   experienceCap: 0
@@ -111680,7 +111684,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7742581467305648959, guid: 4d655cc2cf9bf1b44b56508cbd0e317e, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
