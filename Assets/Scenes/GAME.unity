@@ -5814,9 +5814,18 @@ MonoBehaviour:
     waveQuota: 0
     spawnInterval: 1
     spawnCount: 0
+  - waveName: Wave 1
+    enemyGroups:
+    - enemyName: Kunti
+      enemyCount: 10
+      spawnCount: 0
+      enemyPrefab: {fileID: 1919970375551054313, guid: ebc97b9b751d16a4588026b5165242d8, type: 3}
+    waveQuota: 0
+    spawnInterval: 1
+    spawnCount: 0
   currentWaveCount: 0
   enemiesAlive: 0
-  maxEnemiesAllowed: 4
+  maxEnemiesAllowed: 8
   maxEnemiesReached: 0
   waveInterval: 3
   relativeSpawnPoints:
