@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: -2683613768627675557}
   - component: {fileID: -900668766837239393}
   m_Layer: 0
-  m_Name: Poci
+  m_Name: Kunti
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -77,7 +77,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: ec0e3a1a51b6f7142be299c2a43bd496, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 805d4eab4337e1349b47dc8c3d3ad646, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -157,7 +157,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce73458d4c523614fa86d717ef36ab00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyData: {fileID: 11400000, guid: f0f257ffcdc8cc346ba79be769955f56, type: 2}
+  enemyData: {fileID: 11400000, guid: a3134a1650a18a44dbd5402de19e61be, type: 2}
   currentMoveSpeed: 0
   currentHealth: 0
   currentDamage: 0
