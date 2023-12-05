@@ -10,7 +10,7 @@ public class PlayerStats : MonoBehaviour
     public float currentHealth;
     public float currentRecovery;
     public float currentMoveSpeed;
-    public float currentmight;
+    public float currentMight;
     public float currentProjectileSpeed;
     [HideInInspector]
     public float currentMagnet;
@@ -51,7 +51,7 @@ public class PlayerStats : MonoBehaviour
         currentHealth = characterData.MaxHealth;
         currentRecovery = characterData.Recovery;
         currentMoveSpeed = characterData.MoveSpeed;
-        currentmight = characterData.Might;
+        currentMight = characterData.Might;
         currentProjectileSpeed = characterData.ProjectileSpeed;
         currentMagnet = characterData.Magnet;
 
