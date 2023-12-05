@@ -9,11 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 99806b1af37018b4aaf5a453a8d3bf0d, type: 3}
-  m_Name: Tasbih Weapon
+  m_Script: {fileID: 11500000, guid: f03666c71207c4345a28b34d060261d5, type: 3}
+  m_Name: SpeedPassiveItem Level 2
   m_EditorClassIdentifier: 
-  prefab: {fileID: 324464276308247526, guid: d02046aede53a69498b0fb9cca03340d, type: 3}
-  damage: 5
-  speed: 0
-  cooldownDuration: 3
-  pierce: 0
+  multiplier: 75
+  level: 2
+  nextLevelPrefab: {fileID: 0}
+  icon: {fileID: 0}

@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: MightPassiveItem
   m_EditorClassIdentifier: 
   multiplier: 100
-  level: 0
-  nextLevelPrefab: {fileID: 0}
+  level: 1
+  nextLevelPrefab: {fileID: 8312788853213048808, guid: c93de72b8589e5c4da457d254cde2b37, type: 3}
   icon: {fileID: 0}
