@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
@@ -23,6 +25,14 @@ public class GameManager : MonoBehaviour
     public GameObject pauseScreen;
     public GameObject resultsScreen;
 
+    // current stat display
+    public TextMeshProUGUI currentHealthDisplay;
+    public TextMeshProUGUI currentRecoveryDisplay;
+    public TextMeshProUGUI currentMoveSpeedDisplay; 
+    public TextMeshProUGUI currentMightDisplay; 
+    public TextMeshProUGUI currentProjectileSpeedDisplay; 
+    public TextMeshProUGUI currentMagnetDisplay;
+
     // Flag to check if the game is over
     public bool isGameOver = false;
 
@@ -36,6 +46,7 @@ public class GameManager : MonoBehaviour
         else
         {
             Debug.LogWarning("EXTRA " + this + " DELETED");
+            Destroy(gameObject);
         }
         DisableScreen();
     }
