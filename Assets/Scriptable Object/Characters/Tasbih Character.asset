@@ -15,7 +15,7 @@ MonoBehaviour:
   icon: {fileID: 21300000, guid: 347bd0802671af64cbdce3cbd6dba8fa, type: 3}
   name: Tasbih Character
   startingWeapon: {fileID: 919506953109226374, guid: 5f29b42434ab36b48b20824c587e39ad, type: 3}
-  maxHealth: 10
+  maxHealth: 1000
   recovery: 10
   moveSpeed: 5
   might: 1
