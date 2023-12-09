@@ -37,8 +37,15 @@ public class GameManager : MonoBehaviour
     public Image chosenCharacterImage;
     public TextMeshProUGUI chosenCharacterName;
     public TextMeshProUGUI levelReachedDisplay;
+    public TextMeshProUGUI timeSurvivedDisplay;
     public List<Image> chosenWeaponsUI = new List<Image>(6);
     public List<Image> chosenPassiveItemsUI = new List<Image>(6);
+
+    [Header("Stopwatch")]
+    public float timeLimit; //time limit in seconds
+    float stopwatchTime; //the current time elapsed since the stopwatch started
+    public TextMeshProUGUI stopwatchDisplay;
+
 
     // Flag to check if the game is over
     public bool isGameOver = false;
@@ -67,6 +74,7 @@ public class GameManager : MonoBehaviour
             case GameState.Gameplay:
                 // code for the gameplay state
                 CheckForPauseAndResume();
+                UpdateStopwatch();
                 break;
 
             case GameState.Paused:
@@ -145,6 +153,7 @@ public class GameManager : MonoBehaviour
 
     public void GameOver()
     {
+        timeSurvivedDisplay.text = stopwatchDisplay.text;
         ChangeState(GameState.GameOver);
     }
 
@@ -205,5 +214,28 @@ public class GameManager : MonoBehaviour
                 chosenPassiveItemsUI[i].enabled = false;
             }
         }
+    }
+
+    void UpdateStopwatch()
+    {
+        stopwatchTime += Time.deltaTime;
+
+        UpdateStopwatchDisplay();
+
+        //end player's run once the time limit is reached
+        if(stopwatchTime >= timeLimit)
+        {
+            GameOver();
+        }
+    }
+
+    void UpdateStopwatchDisplay()
+    {
+        //calculate the number of minutes and seconds that have elapsed
+        int minutes = Mathf.FloorToInt(stopwatchTime / 60);
+        int seconds = Mathf.FloorToInt(stopwatchTime % 60);
+
+        //update the stopwatch text to display the elapsed time
+        stopwatchDisplay.text = string.Format("{0:00}:{1:00}", minutes, seconds);
     }
 }
