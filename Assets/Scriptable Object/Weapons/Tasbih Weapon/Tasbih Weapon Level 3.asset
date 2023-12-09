@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 99806b1af37018b4aaf5a453a8d3bf0d, type: 3}
-  m_Name: Knife Weapon Level 2
+  m_Name: Tasbih Weapon Level 3
   m_EditorClassIdentifier: 
-  prefab: {fileID: 2155263366966037238, guid: d7a63b48749a6db49a70245c04df9678, type: 3}
-  damage: 5
-  speed: 15
-  cooldownDuration: 2
-  pierce: 1
+  prefab: {fileID: 324464276308247526, guid: 7c5112fb0a9026c4fb942e84805e125b, type: 3}
+  damage: 7
+  speed: 0
+  cooldownDuration: 2.5
+  pierce: 0
   level: 2
   nextLevelPrefab: {fileID: 0}
-  name: Pisau Level 2
-  description: DMG pisau meningkat sebanyak 5x
-  icon: {fileID: 21300000, guid: 30583dad47d78b8409abec7e35e2955b, type: 3}
+  name: Tasbih Level 3
+  description: DMG tasbih bertambah 5 >> 7
+  icon: {fileID: 21300000, guid: d9c639fe9f233f24cb30ba0e64549b01, type: 3}

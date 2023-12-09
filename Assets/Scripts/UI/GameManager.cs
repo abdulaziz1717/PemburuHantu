@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using UnityEditor.Tilemaps;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -13,7 +14,8 @@ public class GameManager : MonoBehaviour
     {
         Gameplay,
         Paused,
-        GameOver
+        GameOver,
+        LevelUp
     }
 
     // Store the current state of the game
@@ -24,6 +26,7 @@ public class GameManager : MonoBehaviour
     [Header("Screens")]
     public GameObject pauseScreen;
     public GameObject resultsScreen;
+    public GameObject levelUpScreen;
 
     [Header("Current Stat Displays")]
     public TextMeshProUGUI currentHealthDisplay;
@@ -49,6 +52,12 @@ public class GameManager : MonoBehaviour
 
     // Flag to check if the game is over
     public bool isGameOver = false;
+
+    // Flag to check if the player is choosing their upgrades
+    public bool choosingUpgrade;
+
+    // Reference to the player's game object
+    public GameObject playerObject;
 
     void Awake()
     {
@@ -90,6 +99,15 @@ public class GameManager : MonoBehaviour
                     Time.timeScale = 0f; //stop the game entirely
                     Debug.Log("GAME IS OVER");
                     DisplayResults();
+                }
+                break;
+            case GameState.LevelUp:
+                if(!choosingUpgrade)
+                {
+                    choosingUpgrade = true;
+                    Time.timeScale = 0f; //pause the game for now
+                    Debug.Log("Upgrades shown");
+                    levelUpScreen.SetActive(true);
                 }
                 break;
 
@@ -149,6 +167,7 @@ public class GameManager : MonoBehaviour
     {
         pauseScreen.SetActive(false);
         resultsScreen.SetActive(false);
+        levelUpScreen.SetActive(false);
     }
 
     public void GameOver()
@@ -225,7 +244,7 @@ public class GameManager : MonoBehaviour
         //end player's run once the time limit is reached
         if(stopwatchTime >= timeLimit)
         {
-            GameOver();
+            playerObject.SendMessage("Kill");
         }
     }
 
@@ -237,5 +256,19 @@ public class GameManager : MonoBehaviour
 
         //update the stopwatch text to display the elapsed time
         stopwatchDisplay.text = string.Format("{0:00}:{1:00}", minutes, seconds);
+    }
+
+    public void StartLevelUp()
+    {
+        ChangeState(GameState.LevelUp);
+        playerObject.SendMessage("RemoveAndApplyUpgrades");
+    }
+    
+    public void EndLevelUp()
+    {
+        choosingUpgrade = false;
+        Time.timeScale = 1f; //resume the game
+        levelUpScreen.SetActive(false);
+        ChangeState(GameState.Gameplay);
     }
 }

@@ -15,4 +15,6 @@ MonoBehaviour:
   multiplier: 100
   level: 1
   nextLevelPrefab: {fileID: 8312788853213048808, guid: c93de72b8589e5c4da457d254cde2b37, type: 3}
+  name: Might
+  description: DMG proyektil bertambah 100%
   icon: {fileID: 21300000, guid: 2e693212af8c7db43b0f4504a4cdbebd, type: 3}

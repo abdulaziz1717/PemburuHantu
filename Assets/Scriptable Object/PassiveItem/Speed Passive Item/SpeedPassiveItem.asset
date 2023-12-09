@@ -15,4 +15,6 @@ MonoBehaviour:
   multiplier: 50
   level: 1
   nextLevelPrefab: {fileID: 1019014335658487091, guid: 6a04ddeab31f50f4ca2cbc4f1f63a8b1, type: 3}
+  name: Speed
+  description: Bergerak lebih cepat 50%
   icon: {fileID: 21300000, guid: a81c2dea63d54184aa7855313e253f2a, type: 3}
