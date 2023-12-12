@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.Audio;
 
@@ -10,4 +11,10 @@ public class OptionsMenu : MonoBehaviour
     {
         audioMixer.SetFloat("volume", volume);
     }
+
+    public void SetFullscreen (bool isFullscreen)
+    {
+        Screen.fullScreen = isFullscreen;
+    }
+
 }
