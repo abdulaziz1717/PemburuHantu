@@ -44,7 +44,6 @@ public class EnemySpawner : MonoBehaviour
         CalculateWaveQuota();
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (currentWaveCount < waves.Count && waves[currentWaveCount].spawnCount == 0)  //Check if the wave has ended and the next wave should start
@@ -112,13 +111,14 @@ public class EnemySpawner : MonoBehaviour
 
                     // Spawn the enemy at a random position close to the player
                     Instantiate(enemyGroup.enemyPrefab, player.position + relativeSpawnPoints[Random.Range(0, relativeSpawnPoints.Count)].position, Quaternion.identity);
-                    
+
                     enemyGroup.spawnCount++;
                     waves[currentWaveCount].spawnCount++;
                     enemiesAlive++;
                 }
             }
         }
+
         //Reset the maxEnemiesReached flag if the number of enemies alive has dropped below the maximum allowed
         if (enemiesAlive < maxEnemiesAllowed)
         {

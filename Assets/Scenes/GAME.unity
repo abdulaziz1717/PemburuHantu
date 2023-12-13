@@ -7115,54 +7115,78 @@ MonoBehaviour:
   - waveName: Wave 1
     enemyGroups:
     - enemyName: Poci
-      enemyCount: 5
+      enemyCount: 10
       spawnCount: 0
       enemyPrefab: {fileID: 1919970375551054313, guid: 4d655cc2cf9bf1b44b56508cbd0e317e, type: 3}
     - enemyName: Kunti
-      enemyCount: 8
+      enemyCount: 20
       spawnCount: 0
       enemyPrefab: {fileID: 1919970375551054313, guid: ebc97b9b751d16a4588026b5165242d8, type: 3}
+    - enemyName: tuyul
+      enemyCount: 5
+      spawnCount: 0
+      enemyPrefab: {fileID: 1919970375551054313, guid: 643bac60cd6c9dc4aa2129a221819094, type: 3}
     waveQuota: 0
     spawnInterval: 1
     spawnCount: 0
   - waveName: Wave 2
     enemyGroups:
     - enemyName: Poci
-      enemyCount: 6
+      enemyCount: 10
       spawnCount: 0
       enemyPrefab: {fileID: 1919970375551054313, guid: 4d655cc2cf9bf1b44b56508cbd0e317e, type: 3}
     - enemyName: Kunti
-      enemyCount: 9
+      enemyCount: 20
       spawnCount: 0
       enemyPrefab: {fileID: 1919970375551054313, guid: ebc97b9b751d16a4588026b5165242d8, type: 3}
+    - enemyName: tuyul
+      enemyCount: 5
+      spawnCount: 0
+      enemyPrefab: {fileID: 1919970375551054313, guid: 643bac60cd6c9dc4aa2129a221819094, type: 3}
+    - enemyName: Barong
+      enemyCount: 1
+      spawnCount: 0
+      enemyPrefab: {fileID: 1919970375551054313, guid: d5a63fbd2e52d7748b0f5b16a9d8cdc2, type: 3}
     waveQuota: 0
-    spawnInterval: 2
+    spawnInterval: 1
     spawnCount: 0
   - waveName: Wave 3
     enemyGroups:
     - enemyName: Poci
-      enemyCount: 7
+      enemyCount: 13
       spawnCount: 0
       enemyPrefab: {fileID: 1919970375551054313, guid: 4d655cc2cf9bf1b44b56508cbd0e317e, type: 3}
     - enemyName: Kunti
-      enemyCount: 10
+      enemyCount: 23
       spawnCount: 0
       enemyPrefab: {fileID: 1919970375551054313, guid: ebc97b9b751d16a4588026b5165242d8, type: 3}
+    - enemyName: tuyul
+      enemyCount: 8
+      spawnCount: 0
+      enemyPrefab: {fileID: 1919970375551054313, guid: 643bac60cd6c9dc4aa2129a221819094, type: 3}
     waveQuota: 0
-    spawnInterval: 3
+    spawnInterval: 1
     spawnCount: 0
   - waveName: Wave 4
     enemyGroups:
     - enemyName: Poci
-      enemyCount: 9
+      enemyCount: 14
       spawnCount: 0
       enemyPrefab: {fileID: 1919970375551054313, guid: 4d655cc2cf9bf1b44b56508cbd0e317e, type: 3}
     - enemyName: Kunti
-      enemyCount: 12
+      enemyCount: 24
       spawnCount: 0
       enemyPrefab: {fileID: 1919970375551054313, guid: ebc97b9b751d16a4588026b5165242d8, type: 3}
+    - enemyName: tuyul
+      enemyCount: 9
+      spawnCount: 0
+      enemyPrefab: {fileID: 1919970375551054313, guid: 643bac60cd6c9dc4aa2129a221819094, type: 3}
+    - enemyName: Barong
+      enemyCount: 2
+      spawnCount: 0
+      enemyPrefab: {fileID: 1919970375551054313, guid: d5a63fbd2e52d7748b0f5b16a9d8cdc2, type: 3}
     waveQuota: 0
-    spawnInterval: 4
+    spawnInterval: 1
     spawnCount: 0
   currentWaveCount: 0
   enemiesAlive: 0
@@ -33169,10 +33193,34 @@ MonoBehaviour:
   levelRanges:
   - startLevel: 1
     endLevel: 3
-    experienceCapIncrease: 100
+    experienceCapIncrease: 300
   - startLevel: 4
     endLevel: 5
-    experienceCapIncrease: 200
+    experienceCapIncrease: 500
+  - startLevel: 6
+    endLevel: 7
+    experienceCapIncrease: 700
+  - startLevel: 8
+    endLevel: 9
+    experienceCapIncrease: 900
+  - startLevel: 10
+    endLevel: 11
+    experienceCapIncrease: 1100
+  - startLevel: 12
+    endLevel: 13
+    experienceCapIncrease: 1300
+  - startLevel: 14
+    endLevel: 15
+    experienceCapIncrease: 1500
+  - startLevel: 16
+    endLevel: 17
+    experienceCapIncrease: 1700
+  - startLevel: 18
+    endLevel: 19
+    experienceCapIncrease: 1900
+  - startLevel: 20
+    endLevel: 21
+    experienceCapIncrease: 2100
   weaponIndex: 0
   passiveItemIndex: 0
   healthBar: {fileID: 410319886}
@@ -39087,7 +39135,7 @@ MonoBehaviour:
   - {fileID: 1581595138}
   - {fileID: 937710463}
   - {fileID: 2014549711}
-  timeLimit: 75
+  timeLimit: 6000
   stopwatchDisplay: {fileID: 802590325}
   isGameOver: 0
   choosingUpgrade: 0
