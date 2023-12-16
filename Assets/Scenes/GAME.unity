@@ -7123,62 +7123,79 @@ MonoBehaviour:
       spawnCount: 0
       enemyPrefab: {fileID: 1919970375551054313, guid: ebc97b9b751d16a4588026b5165242d8, type: 3}
     - enemyName: tuyul
-      enemyCount: 5
+      enemyCount: 10
       spawnCount: 0
       enemyPrefab: {fileID: 1919970375551054313, guid: 643bac60cd6c9dc4aa2129a221819094, type: 3}
     waveQuota: 0
-    spawnInterval: 1
+    spawnInterval: 2
     spawnCount: 0
   - waveName: Wave 2
     enemyGroups:
     - enemyName: Poci
-      enemyCount: 10
+      enemyCount: 15
       spawnCount: 0
       enemyPrefab: {fileID: 1919970375551054313, guid: 4d655cc2cf9bf1b44b56508cbd0e317e, type: 3}
     - enemyName: Kunti
-      enemyCount: 20
+      enemyCount: 25
       spawnCount: 0
       enemyPrefab: {fileID: 1919970375551054313, guid: ebc97b9b751d16a4588026b5165242d8, type: 3}
     - enemyName: tuyul
-      enemyCount: 5
+      enemyCount: 10
       spawnCount: 0
       enemyPrefab: {fileID: 1919970375551054313, guid: 643bac60cd6c9dc4aa2129a221819094, type: 3}
-    - enemyName: Barong
-      enemyCount: 1
-      spawnCount: 0
-      enemyPrefab: {fileID: 1919970375551054313, guid: d5a63fbd2e52d7748b0f5b16a9d8cdc2, type: 3}
     waveQuota: 0
-    spawnInterval: 1
+    spawnInterval: 2
     spawnCount: 0
   - waveName: Wave 3
     enemyGroups:
     - enemyName: Poci
-      enemyCount: 13
+      enemyCount: 20
       spawnCount: 0
       enemyPrefab: {fileID: 1919970375551054313, guid: 4d655cc2cf9bf1b44b56508cbd0e317e, type: 3}
     - enemyName: Kunti
-      enemyCount: 23
+      enemyCount: 30
       spawnCount: 0
       enemyPrefab: {fileID: 1919970375551054313, guid: ebc97b9b751d16a4588026b5165242d8, type: 3}
     - enemyName: tuyul
-      enemyCount: 8
+      enemyCount: 15
+      spawnCount: 0
+      enemyPrefab: {fileID: 1919970375551054313, guid: 643bac60cd6c9dc4aa2129a221819094, type: 3}
+    - enemyName: barong
+      enemyCount: 1
       spawnCount: 0
       enemyPrefab: {fileID: 1919970375551054313, guid: 643bac60cd6c9dc4aa2129a221819094, type: 3}
     waveQuota: 0
-    spawnInterval: 1
+    spawnInterval: 2
     spawnCount: 0
   - waveName: Wave 4
     enemyGroups:
     - enemyName: Poci
-      enemyCount: 14
+      enemyCount: 25
       spawnCount: 0
       enemyPrefab: {fileID: 1919970375551054313, guid: 4d655cc2cf9bf1b44b56508cbd0e317e, type: 3}
     - enemyName: Kunti
-      enemyCount: 24
+      enemyCount: 35
       spawnCount: 0
       enemyPrefab: {fileID: 1919970375551054313, guid: ebc97b9b751d16a4588026b5165242d8, type: 3}
     - enemyName: tuyul
-      enemyCount: 9
+      enemyCount: 20
+      spawnCount: 0
+      enemyPrefab: {fileID: 1919970375551054313, guid: 643bac60cd6c9dc4aa2129a221819094, type: 3}
+    waveQuota: 0
+    spawnInterval: 2
+    spawnCount: 0
+  - waveName: Wave 5
+    enemyGroups:
+    - enemyName: Poci
+      enemyCount: 30
+      spawnCount: 0
+      enemyPrefab: {fileID: 1919970375551054313, guid: 4d655cc2cf9bf1b44b56508cbd0e317e, type: 3}
+    - enemyName: Kunti
+      enemyCount: 40
+      spawnCount: 0
+      enemyPrefab: {fileID: 1919970375551054313, guid: ebc97b9b751d16a4588026b5165242d8, type: 3}
+    - enemyName: tuyul
+      enemyCount: 25
       spawnCount: 0
       enemyPrefab: {fileID: 1919970375551054313, guid: 643bac60cd6c9dc4aa2129a221819094, type: 3}
     - enemyName: Barong
@@ -7186,13 +7203,106 @@ MonoBehaviour:
       spawnCount: 0
       enemyPrefab: {fileID: 1919970375551054313, guid: d5a63fbd2e52d7748b0f5b16a9d8cdc2, type: 3}
     waveQuota: 0
+    spawnInterval: 2
+    spawnCount: 0
+  - waveName: Wave 6
+    enemyGroups:
+    - enemyName: Poci
+      enemyCount: 35
+      spawnCount: 0
+      enemyPrefab: {fileID: 1919970375551054313, guid: 4d655cc2cf9bf1b44b56508cbd0e317e, type: 3}
+    - enemyName: Kunti
+      enemyCount: 45
+      spawnCount: 0
+      enemyPrefab: {fileID: 1919970375551054313, guid: ebc97b9b751d16a4588026b5165242d8, type: 3}
+    - enemyName: tuyul
+      enemyCount: 30
+      spawnCount: 0
+      enemyPrefab: {fileID: 1919970375551054313, guid: 643bac60cd6c9dc4aa2129a221819094, type: 3}
+    waveQuota: 0
+    spawnInterval: 1
+    spawnCount: 0
+  - waveName: Wave 7
+    enemyGroups:
+    - enemyName: Poci
+      enemyCount: 40
+      spawnCount: 0
+      enemyPrefab: {fileID: 1919970375551054313, guid: 4d655cc2cf9bf1b44b56508cbd0e317e, type: 3}
+    - enemyName: Kunti
+      enemyCount: 50
+      spawnCount: 0
+      enemyPrefab: {fileID: 1919970375551054313, guid: ebc97b9b751d16a4588026b5165242d8, type: 3}
+    - enemyName: tuyul
+      enemyCount: 35
+      spawnCount: 0
+      enemyPrefab: {fileID: 1919970375551054313, guid: 643bac60cd6c9dc4aa2129a221819094, type: 3}
+    - enemyName: Barong
+      enemyCount: 3
+      spawnCount: 0
+      enemyPrefab: {fileID: 1919970375551054313, guid: d5a63fbd2e52d7748b0f5b16a9d8cdc2, type: 3}
+    waveQuota: 0
+    spawnInterval: 1
+    spawnCount: 0
+  - waveName: Wave 8
+    enemyGroups:
+    - enemyName: Poci
+      enemyCount: 45
+      spawnCount: 0
+      enemyPrefab: {fileID: 1919970375551054313, guid: 4d655cc2cf9bf1b44b56508cbd0e317e, type: 3}
+    - enemyName: Kunti
+      enemyCount: 55
+      spawnCount: 0
+      enemyPrefab: {fileID: 1919970375551054313, guid: ebc97b9b751d16a4588026b5165242d8, type: 3}
+    - enemyName: tuyul
+      enemyCount: 40
+      spawnCount: 0
+      enemyPrefab: {fileID: 1919970375551054313, guid: 643bac60cd6c9dc4aa2129a221819094, type: 3}
+    waveQuota: 0
+    spawnInterval: 1
+    spawnCount: 0
+  - waveName: Wave 9
+    enemyGroups:
+    - enemyName: Poci
+      enemyCount: 50
+      spawnCount: 0
+      enemyPrefab: {fileID: 1919970375551054313, guid: 4d655cc2cf9bf1b44b56508cbd0e317e, type: 3}
+    - enemyName: Kunti
+      enemyCount: 60
+      spawnCount: 0
+      enemyPrefab: {fileID: 1919970375551054313, guid: ebc97b9b751d16a4588026b5165242d8, type: 3}
+    - enemyName: tuyul
+      enemyCount: 45
+      spawnCount: 0
+      enemyPrefab: {fileID: 1919970375551054313, guid: 643bac60cd6c9dc4aa2129a221819094, type: 3}
+    waveQuota: 0
+    spawnInterval: 1
+    spawnCount: 0
+  - waveName: Wave 10
+    enemyGroups:
+    - enemyName: Poci
+      enemyCount: 50
+      spawnCount: 0
+      enemyPrefab: {fileID: 1919970375551054313, guid: 4d655cc2cf9bf1b44b56508cbd0e317e, type: 3}
+    - enemyName: Kunti
+      enemyCount: 60
+      spawnCount: 0
+      enemyPrefab: {fileID: 1919970375551054313, guid: ebc97b9b751d16a4588026b5165242d8, type: 3}
+    - enemyName: tuyul
+      enemyCount: 45
+      spawnCount: 0
+      enemyPrefab: {fileID: 1919970375551054313, guid: 643bac60cd6c9dc4aa2129a221819094, type: 3}
+    - enemyName: Barong
+      enemyCount: 5
+      spawnCount: 0
+      enemyPrefab: {fileID: 1919970375551054313, guid: d5a63fbd2e52d7748b0f5b16a9d8cdc2, type: 3}
+    waveQuota: 0
     spawnInterval: 1
     spawnCount: 0
   currentWaveCount: 0
   enemiesAlive: 0
-  maxEnemiesAllowed: 10
+  maxEnemiesAllowed: 20
   maxEnemiesReached: 0
-  waveInterval: 3
+  waveInterval: 75
   relativeSpawnPoints:
   - {fileID: 1086103218}
   - {fileID: 1299820136}
