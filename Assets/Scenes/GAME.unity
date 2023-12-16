@@ -33305,16 +33305,16 @@ MonoBehaviour:
   levelRanges:
   - startLevel: 1
     endLevel: 3
-    experienceCapIncrease: 500
+    experienceCapIncrease: 700
   - startLevel: 4
     endLevel: 5
-    experienceCapIncrease: 800
+    experienceCapIncrease: 1400
   - startLevel: 6
     endLevel: 7
-    experienceCapIncrease: 2100
+    experienceCapIncrease: 2800
   - startLevel: 8
     endLevel: 9
-    experienceCapIncrease: 2400
+    experienceCapIncrease: 5600
   weaponIndex: 0
   passiveItemIndex: 0
   healthBar: {fileID: 410319886}
