@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Barong Enemy
   m_EditorClassIdentifier: 
   moveSpeed: 3
-  maxHealth: 200
-  damage: 70
+  maxHealth: 300
+  damage: 250
